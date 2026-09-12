@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Where F5 disappears — an AI search visibility audit</title>
+<meta name="description" content="How F5 Hiring Solutions and F5 Global Talent show up when buyers and candidates ask an AI assistant.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FAF7F2; --ink:#16181C; --soft:#6E6A64; --rule:#E2DCD2;
+  --flag:#C8432F; --good:#2E7D51;
+  --measure:660px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:17px; line-height:1.65;
+  padding:0 24px 120px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--measure); margin:0 auto}
+
+header{padding:96px 0 60px}
+h1{font-size:40px; line-height:1.15; font-weight:600; letter-spacing:-.02em}
+header .sub{margin-top:22px; color:var(--soft); font-size:18px}
+
+section{padding:52px 0; border-top:1px solid var(--rule)}
+h2{font-size:24px; font-weight:600; letter-spacing:-.01em; margin-bottom:22px}
+h3{font-size:18px; font-weight:600; margin:30px 0 8px}
+p+p{margin-top:18px}
+strong{font-weight:600}
+
+.callout{
+  background:#fff; border:1px solid var(--rule); border-left:3px solid var(--flag);
+  padding:26px 28px; margin:6px 0 0; font-size:18px; line-height:1.6;
+}
+
+.holes{list-style:none; margin-top:6px}
+.holes li{padding:22px 0; border-bottom:1px solid var(--rule)}
+.holes li:last-child{border-bottom:0}
+.holes .what{font-weight:600; display:block; margin-bottom:4px}
+.holes .why{color:var(--soft); font-size:16px}
+
+ol.fixes{list-style:none; counter-reset:fix; margin-top:6px}
+ol.fixes li{
+  counter-increment:fix; position:relative;
+  padding:20px 0 20px 44px; border-bottom:1px solid var(--rule);
+}
+ol.fixes li:last-child{border-bottom:0}
+ol.fixes li::before{
+  content:counter(fix); position:absolute; left:0; top:20px;
+  width:26px; height:26px; border-radius:50%; background:var(--good); color:#fff;
+  font-size:14px; font-weight:600; display:flex; align-items:center; justify-content:center;
+}
+ol.fixes .head{font-weight:600; display:block; margin-bottom:4px}
+ol.fixes .body{color:var(--soft); font-size:16px}
+
+.method{color:var(--soft); font-size:16px}
+footer{padding:48px 0 0; border-top:1px solid var(--rule); color:var(--soft); font-size:15px}
+footer p+p{margin-top:10px}
+
+@media (max-width:640px){
+  body{font-size:16px; padding:0 18px 80px}
+  header{padding:64px 0 44px}
+  h1{font-size:29px}
+  h2{font-size:21px}
+  .callout{padding:20px 20px; font-size:17px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Where F5 disappears</h1>
+  <p class="sub">An audit of how F5 shows up when buyers and candidates ask an AI assistant. Nobody asked for this — it's the gap I kept hitting while researching the other two tests, and it looked expensive enough to write down.</p>
+</header>
+
+<section>
+  <h2>The finding</h2>
+  <p class="callout">F5's own site is built well for AI answers. The gap is everywhere else. When an assistant answers "who should I use to hire full-time remote staff from India or the Philippines," it doesn't read vendor websites — it reads listicles, directories and review sites. On those, F5 is absent, empty, or describing a business it no longer runs. The companies that appear instead are largely the ones who wrote the listicles.</p>
+</section>
+
+<section>
+  <h2>What's already working</h2>
+  <p>Worth saying first, because it's the harder half and it's done.</p>
+  <p>The Hiring Solutions site answers questions in the shape assistants retrieve. The homepage states plainly what F5 is <em>not</em> — not a freelance marketplace, not a recruiting agency, not an EOR — which is exactly the disambiguation an assistant needs to place a company in a category. Pricing is on the page rather than behind a form. The replacement guarantee, the 7–14 day shortlist and the retention figure are all stated as facts an answer can quote.</p>
+  <p>There's also a real comparison content programme: alternatives to Upwork, managed remote staffing versus a domestic temp agency, versus an in-house junior hire, versus a fractional executive. Those are the queries buyers actually type, answered directly.</p>
+  <p>And someone has clearly thought about this already — there's an "Ask an AI about F5" block with prefilled ChatGPT, Claude and Perplexity links, and a page disambiguating F5 Hiring Solutions from F5 Networks.</p>
+  <p>So this isn't a company ignoring AI search. It's a company doing the on-site half well and missing the off-site half.</p>
+</section>
+
+<section>
+  <h2>The gap</h2>
+  <p><strong>Assistants weight third-party mentions above self-published claims.</strong> F5 saying F5 is the best alternative to Upwork is a marketing page. A comparison site saying it is a citation. F5 has plenty of the first and almost none of the second.</p>
+  <p>Searching the core buyer query — best companies for hiring managed remote staff from India and the Philippines — returned ten results. F5 appeared in none. Cloudstaff, Penbrothers, More Staffing, Neowork, Sourcefit, Outsourced and Remote Staff did.</p>
+  <p><strong>The listicles are written by competitors.</strong> Invedus, Smart Outsourcing Solution, Neowork, Somewhere, 1840 &amp; Company and Hire Overseas all publish "top providers" rankings. These are the pages assistants synthesise from, and they are authored by the vendors being ranked. F5's absence isn't an oversight in someone's editorial process — there is no editorial process.</p>
+  <p><strong>One competitor is explicitly optimising for this.</strong> More Staffing runs a page written as direct answers for operators comparing virtual staffing agencies, freelance marketplaces and managed providers. Question-shaped headings, answer-first structure, aimed at retrieval rather than at readers.</p>
+</section>
+
+<section>
+  <h2>Four specific holes</h2>
+  <ul class="holes">
+    <li><span class="what">The Clutch profile has no reviews</span><span class="why">And its description still covers generic offshore staffing rather than the managed-workforce model. Clutch is among the most-cited sources when an assistant is asked to compare B2B service providers.</span></li>
+    <li><span class="what">ZoomInfo describes F5 as a developer network</span><span class="why">Full-stack, mobile, UI/UX, transparent pricing, fast onboarding. That's a different business from the one F5 leads with now, and ZoomInfo descriptions syndicate widely. An assistant asked what F5 Hiring Solutions does can reasonably come back with a dev shop.</span></li>
+    <li><span class="what">Glassdoor shows four reviews</span><span class="why">For a company that has placed 500+ professionals. Glassdoor is the first source an assistant reaches for when a candidate asks whether somewhere is a good employer — and candidate trust is the entire job of the Global Talent brand.</span></li>
+    <li><span class="what">The LinkedIn page is still f5-web-solutions</span><span class="why">Branded "F5 Hiring/Web Solutions," carrying both brands in one feed. The visible content is hashtag-stacked posts about outsourcing app developers — the old positioning, still the first thing a buyer or candidate finds. Two audiences with opposite needs are reading the same feed under a name the company no longer uses.</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>What I'd do, in order</h2>
+  <ol class="fixes">
+    <li><span class="head">Split the LinkedIn presence</span><span class="body">A separate F5 Global Talent company page, and rename the existing one to F5 Hiring Solutions. Cheapest fix here and the one with the largest audience already attached. Client-acquisition content and employer-brand content should not share a feed.</span></li>
+    <li><span class="head">Fix the directory descriptions</span><span class="body">Clutch and ZoomInfo first, then anywhere else the old developer-network copy survives. These take an afternoon and they're what assistants quote when asked what F5 does.</span></li>
+    <li><span class="head">Ask for reviews, systematically</span><span class="body">Clutch from clients, Glassdoor from placed professionals. Four Glassdoor reviews against 500+ placements is the single widest gap between reality and what an assistant can see. This is the slowest fix, which is why it starts now.</span></li>
+    <li><span class="head">Get into other people's lists</span><span class="body">The listicles are competitor-authored, but many accept submissions, and independent roundups and industry press do exist. One placement in a genuinely third-party comparison is worth more than another self-published page.</span></li>
+    <li><span class="head">Keep writing the comparison pages</span><span class="body">They're good, they're working, and they're the reason F5 surfaces at all on high-intent queries.</span></li>
+    <li><span class="head">Finish the F5 Networks disambiguation</span><span class="body">The page exists; the work is making the entity unambiguous wherever else F5 appears — consistent naming, consistent descriptions, structured data tying both brands to one organisation.</span></li>
+  </ol>
+</section>
+
+<section>
+  <h2>Method, and what this doesn't cover</h2>
+  <p class="method">This audit is based on retrieval testing across the sources AI assistants draw from — search results, directories, review platforms and the competitor-authored roundups that dominate this category — plus a read of both F5 sites for answer-shaped structure and entity clarity.</p>
+  <p class="method">It is not a transcript study. I have not run these queries through ChatGPT, Perplexity and Gemini and recorded their answers verbatim, so the findings describe what those systems have available to retrieve rather than what any one of them said on a given day. That's the honest limit of it, and it's worth stating because the difference matters: the fixes above change the source material, which is the only part anyone can actually control.</p>
+</section>
+
+<footer>
+  <p>Everything cited is publicly visible and dated September 2026.</p>
+  <p>Produced using an AI search visibility auditing tool I built.</p>
+  <p>Ahfaz · September 2026</p>
+</footer>
+
+</div>
+</body>
+</html>
